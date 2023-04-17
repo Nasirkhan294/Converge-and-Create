@@ -1,9 +1,6 @@
-# Converge and Create
-HTML/CSS &amp; JavaScript capstone project - Conference page
-<a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Personal Portfolio Project</b></h3>
+  <h3><b>Converge and Create</b></h3>
 
 </div>
 
@@ -131,7 +128,6 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **FIRST CAPSTONE PROJECT**
 - [ ] **Coming Up Soon**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,10 +161,12 @@ To all the individuals whose creativity and dedication inspired the codebase, I 
 ## :question: FAQ <a name="faq"></a>
 
 - **Can I fork and reuse this repository?**
-Absolutely! Please feel free to fork and reuse this repository for your own projects.
+
+ Absolutely! Please feel free to fork and reuse this repository for your own projects.
 
 - **Is it okay to improve this repository? Will my changes be accepted?**
-Definitely! We welcome any improvements or new ideas you may have. If your changes are good and align with the project's goals, we would be happy to accept them.
+
+ Definitely! We welcome any improvements or new ideas you may have. If your changes are good and align with the project's goals, we would be happy to accept them.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
