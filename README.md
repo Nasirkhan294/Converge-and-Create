@@ -1,8 +1,6 @@
 <a name="readme-top"></a>
 
-<div align="center">
   ![Converge and Create](./images/logo.png)
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
