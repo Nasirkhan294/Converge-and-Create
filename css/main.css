@@ -1,5 +1,827 @@
+/* Variables ------------------------------------------------------------------- */
+:root {
+  --base-color: #d3d3d3;
+  --primary-color: #ec5242;
+  --secondary-color: #272a31;
+}
+
+/* ====================== Global Styles  ========================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: antiquewhite;
-  color: #222;
   font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  width: 40%;
+  padding: 0.3em 0;
+  color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+  border: 2px dashed var(--primary-color);
+  background-color: var(--base-color);
+}
+
+.container {
+  width: 90%;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.column {
+  grid-template-columns: 100%;
+  grid-gap: 1em;
+}
+
+/* -------------------- Mobile Header Styles -------------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container {
+  width: 100%;
+}
+
+.header-top {
+  height: 2em;
+  background-color: var(--secondary-color);
+}
+
+.header-top ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+.header-top ul a {
+  color: var(--base-color);
+  font-size: 0.8em;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding: 1em;
+  box-shadow: 0 0.5rem 1rem var(--base-color);
+}
+
+#menu-btn {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#menu-btn.fa-times {
+  transform: rotate(180deg);
+}
+
+.logo {
+  display: none;
+}
+
+.nav-item {
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 26%;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: var(--base-color);
+  text-align: center;
+  text-transform: capitalize;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.5s;
+  z-index: 1000;
+}
+
+.nav-item.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.nav-item li {
+  margin-bottom: 1em;
+}
+
+.nav-item li a {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+}
+
+.nav-item li a:hover {
+  color: var(--primary-color);
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* -------------------- Mobile Hero Styles -------------------- */
+.hero-area {
+  background-image: url(../images/mobile_intro_bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 110vh;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+.hero-area::before {
+  content: '';
+  filter: blur(0.5em);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-top-desc,
+.hero-heading {
+  color: var(--primary-color);
+  margin-left: 0.5em;
+}
+
+.hero-top-desc {
+  font-size: 1.5em;
+}
+
+.hero-heading {
+  font-size: 2em;
+}
+
+.hero-highlight {
+  padding: 0.5em;
+  background-color: var(--base-color);
+  margin: 1.5em 2.5em 1em 1em;
+  border: 1px solid #fff;
+  font-size: 0.9em;
+}
+
+.hero-area h2 {
+  color: var(--secondary-color);
+  margin-left: 0.5em;
+}
+
+.hero-bottom-desc {
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin: 0.5em 1em 3em;
+  font-size: 0.9em;
+}
+
+/* -------------------- Mobile Program Section Styles -------------------- */
+.program {
+  background-image: url(../images/main-background-icon.PNG);
+  padding: 2em 0;
+}
+
+.program h2 {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.underline-sm {
+  display: block;
+  width: 20%;
+  height: 0.125em;
+  margin: 0.5em 0;
+  background-color: var(--primary-color);
+}
+
+.program-cards {
+  margin: 2em auto;
+}
+
+.program-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1em 0.3em;
+}
+
+.program-card img {
+  width: 20%;
+  padding-bottom: 0.5em;
+}
+
+.program-card h3 {
+  color: var(--primary-color);
+  font-size: 1em;
+  margin: 0 0.8em;
+}
+
+.feature .span,
+p {
+  font-size: 0.8em;
+}
+
+.program-card p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.program-btn {
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  width: 85%;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.program-link {
+  display: none;
+}
+
+/* -------------------- Mobile Feature Section Styles -------------------- */
+
+.feature {
+  padding: 2em 0;
+}
+
+.feature-cards {
+  margin: 2em 0;
+}
+
+.feature-card {
+  justify-content: space-between;
+}
+
+.feature-thumbnail {
+  background-image: url(../images/chessboard-mobile.PNG);
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 1em;
+  position: relative;
+  top: -2.5em;
+  left: -1.125em;
+}
+
+.feature-thumbnail img {
+  width: 100%;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  border: 5px solid var(--base-color);
+  box-shadow: 0.5em 1em 1.5em 0.2em var(--base-color);
+}
+
+.feature h3 {
+  font-size: 1em;
+}
+
+.feature .span {
+  color: var(--primary-color);
+}
+
+/* Hide all feature cards except for the first two */
+.feature-card:nth-child(n + 3) {
+  display: none;
+}
+
+.load-more-button {
+  width: 100%;
+  padding: 0.5em 0;
+  font-size: 1em;
+  border: 1px solid var(--secondary-color);
+}
+
+/* -------------------- Mobile About Page Hero Styles -------------------- */
+.about-hero-area {
+  background-image: url(../images/about_bg_01.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  position: relative;
+}
+
+.about-hero-area::before {
+  content: '';
+  filter: blur(0.5em);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.about-hero-content {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: 3em;
+}
+
+.about-hero-top-desc,
+.about-hero-heading {
+  color: var(--primary-color);
+}
+
+.about-hero-top-desc {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.about-hero-heading {
+  font-size: 2em;
+}
+
+.about-hero-highlight {
+  padding: 0.3em;
+  background-color: var(--base-color);
+  margin: 1.5em 1em 0;
+  border: 1px solid #fff;
+  font-size: 0.9em;
+}
+
+.about-hero-area h2 {
+  color: var(--secondary-color);
+  padding: 0.5em 0;
+}
+
+.about-hero-bottom-desc {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+/* -------------------- Mobile About Page Contest Styles -------------------- */
+.contest {
+  padding: 3em 0;
+  background-color: var(--base-color);
+  text-align: center;
+}
+
+.contest p {
+  font-size: 1em;
+}
+
+.contest-logo {
+  margin-top: 1.5em;
+  padding: 0.5em;
+  width: 90%;
+  border: 2px solid var(--secondary-color);
+  background-color: #fff;
+}
+
+.contest-logo img {
+  width: 100%;
+}
+
+/* -------------------- Mobile About Page past-summits Styles -------------------- */
+.past-summits {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.past-summits p {
+  font-size: 1em;
+}
+
+.ps-thumbnail {
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.th-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.th-card img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.overlay h3 {
+  color: #fff;
+}
+
+.overlay p {
+  color: #fff;
+}
+
+/* -------------------- Mobile About Page Partner Styles -------------------- */
+.partner {
+  padding: 3em 0;
+  background-color: var(--secondary-color);
+}
+
+.partner h2 {
+  color: var(--base-color);
+}
+
+.partner-logo-wrapper {
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.partner-logo-wrapper img {
+  width: 25%;
+  margin: 0 0.5em;
+  margin-bottom: 1em;
+}
+
+/* -------------------- Footer Styles -------------------- */
+.footer {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+/* ====================== Tablet & Desktop Breakpoints  ========================== */
+@media only screen and (min-width: 768px) {
+  .underline-sm {
+    width: 8%;
+  }
+
+  .header-top ul {
+    justify-content: flex-end;
+  }
+
+  .nav-item li {
+    margin-bottom: 0;
+  }
+
+  .header-top ul li {
+    margin-left: 1em;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    justify-content: space-evenly;
+    flex-direction: row;
+    clip-path: none;
+    width: 50%;
+    position: static;
+    background-color: inherit;
+  }
+
+  .nav-item li a {
+    color: var(--secondary-color);
+  }
+
+  .btn {
+    width: 18%;
+    padding: 0.5em 0;
+  }
+
+  .hero-area {
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    transform: translate(-48%, -41%);
+    width: 67%;
+  }
+
+  .hero-top-desc,
+  .hero-heading {
+    margin: 0 1em 0 0;
+  }
+
+  .hero-heading {
+    font-size: 2.5em;
+  }
+
+  .hero-highlight {
+    margin: 1em 0;
+    font-size: 1.2em;
+  }
+
+  .hero-area h2 {
+    margin-left: 0;
+  }
+
+  .hero-bottom-desc {
+    margin: 0.5em 0 3em;
+    font-size: 1em;
+  }
+
+  .program-cards {
+    grid-template-columns: repeat(5, 20%);
+    margin: 3em auto;
+    grid-gap: 0.125em;
+  }
+
+  .program-card {
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .program-card:nth-child(4) {
+    border: 2px solid #fff;
+  }
+
+  .program-card img {
+    width: 40%;
+  }
+
+  .program-btn {
+    display: none;
+  }
+
+  .program-link {
+    display: block;
+    font-size: 1em;
+    color: var(--base-color);
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  .feature-container {
+    margin-left: 2em;
+  }
+
+  .feature-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-card {
+    margin-bottom: 4em;
+  }
+
+  .feature-thumbnail {
+    width: 90%;
+  }
+
+  .feature-card:nth-child(n + 3) {
+    display: flex;
+  }
+
+  .load-more-button {
+    display: none;
+  }
+
+  .partner-logo-wrapper img {
+    width: 13%;
+    margin: 0 1em;
+  }
+
+  .partner h2 {
+    font-size: 2em;
+  }
+
+  .about-hero-area {
+    min-height: 120vh;
+  }
+
+  .about-hero-content {
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    transform: translate(-48%, -41%);
+    width: 67%;
+  }
+
+  .about-hero-highlight {
+    padding: 2em;
+    font-size: 1em;
+  }
+
+  .contest .container {
+    width: 40%;
+  }
+
+  .th-card {
+    width: 40%;
+    margin-left: 1.5em;
+  }
+
+  .overlay h3 {
+    font-size: 2em;
+  }
+
+  .overlay p {
+    font-size: 1.2em;
+  }
+}
+
+/* =================== Desktop Styles ===================== */
+@media only screen and (min-width: 1200px) {
+  .underline-sm {
+    width: 3%;
+  }
+
+  .nav-item li a {
+    font-size: 1.2em;
+  }
+
+  .header-top ul li {
+    margin-left: 2em;
+  }
+
+  .btn {
+    width: 10%;
+  }
+
+  .hero-area {
+    background-image: url(../images/main_big.png);
+    background-size: cover;
+    background-position: right top;
+    padding-right: 6em;
+    min-height: 95vh;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 48%;
+    left: 36%;
+    width: 38%;
+  }
+
+  .hero-highlight {
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .hero-top-desc {
+    font-size: 2em;
+  }
+
+  .hero-heading {
+    font-size: 3em;
+  }
+
+  .hero-area h2 {
+    font-size: 2em;
+  }
+
+  .hero-bottom-desc {
+    font-size: 1.3em;
+    color: var(--base-color);
+  }
+
+  .program {
+    padding: 5em 0;
+  }
+
+  .program-cards {
+    grid-gap: 0.2em;
+  }
+
+  .program-card h3 {
+    font-size: 1.3em;
+  }
+
+  .program-card p {
+    font-size: 1em;
+  }
+
+  .feature-card {
+    margin-bottom: 7em;
+  }
+
+  .feature-thumbnail {
+    background-image: url(../images/bg-chessboard-icon.png);
+  }
+
+  .feature-thumbnail img {
+    left: 1.2em;
+  }
+
+  .partner-logo-wrapper img {
+    width: 8%;
+  }
+
+  .footer {
+    padding-top: 3em;
+  }
+
+  .about-hero-area {
+    background-image: url(../images/main_big.png);
+    background-position: left bottom;
+    min-height: 90vh;
+  }
+
+  .about-hero-content {
+    width: 44%;
+  }
+
+  .about-hero-top-desc {
+    font-size: 2em;
+  }
+
+  .about-hero-heading {
+    font-size: 3.2em;
+  }
+
+  .about-hero-area h2 {
+    font-size: 2em;
+  }
+
+  .about-hero-bottom-desc {
+    font-size: 1.2em;
+  }
+
+  .contest .container {
+    width: 30%;
+  }
+
+  .th-card {
+    width: 30%;
+  }
 }
