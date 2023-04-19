@@ -44,6 +44,8 @@
 ### Key Features <a name="key-features"></a>
 
 - [X] **Mobile Responsive**
+- [X] **Tablet Responsive**
+- [X] **Desktop Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,6 +157,8 @@ Please support this project and be a part of something meaningful and impactful.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success.
+
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
