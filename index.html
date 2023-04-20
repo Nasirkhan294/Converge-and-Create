@@ -14,8 +14,143 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome icons kit -->
+    <script
+      src="https://kit.fontawesome.com/7f35089b8a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Converge and Create</h1>
+    <header>
+      <div class="container">
+        <div class="header-top flex-row align-center">
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Mypage</a></li>
+            <li><a href="#">Pakistan</a></li>
+          </ul>
+        </div>
+        <nav class="navbar flex-row align-center">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <figure class="logo">
+            <img src="./images/logo.png" alt="Converge and Create logo" />
+          </figure>
+          <ul class="nav-item flex-row align-center">
+            <li><a href="about/index.html">about</a></li>
+            <li><a href="#program">program</a></li>
+            <li><a href="#join">join</a></li>
+            <li><a href="#sponsor">sponsor</a></li>
+            <li><a href="#news">news</a></li>
+          </ul>
+          <button
+            class="btn flex-row justify-center align-center"
+            type="button"
+          >
+            CC Campaign
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-area">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-top-desc">"Hello, Sharing World"</p>
+            <h1 class="hero-heading">Converge and Create Global Summit 2023</h1>
+            <p class="hero-highlight">
+              Join a global movement for positive change in Pakistan, uniting
+              80+ countries in joyful celebration of openness and sharing.
+            </p>
+            <h2>2023.10.15(THU) ~ 16(FRI)</h2>
+            <p class="hero-bottom-desc">
+              @ Converge & Create, Art Hub, and More.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Program Section Start -->
+      <section class="program flex-column align-center">
+        <div class="container flex-column align-center">
+          <h2>Main Program</h2>
+          <span class="underline-sm"></span>
+          <div class="program-cards grid column">
+            <div class="program-card flex-row justify-center align-center">
+              <img src="images/lecture-icon.png" alt="lecture icon" />
+              <h3>Lecture</h3>
+              <p>Global insights on sharing and openness.</p>
+            </div>
+            <div class="program-card flex-row justify-center align-center">
+              <img src="images/exhibition-icon.png" alt="Lecture icon" />
+              <h3>CC Exhibition</h3>
+              <p>Discover Pakistani art with CC-licensed creations.</p>
+            </div>
+            <div class="program-card flex-row justify-center align-center">
+              <img src="images/forum-icon.png" alt="Forum icon" />
+              <h3>Forum</h3>
+              <p>Collaborate with industry experts to elevate your brand.</p>
+            </div>
+            <div class="program-card flex-row justify-center align-center">
+              <img src="images/workshop-icon.png" alt="Workshop icon" />
+              <h3>Workshop</h3>
+              <p>Build your brand with open source.</p>
+            </div>
+            <div class="program-card flex-row justify-center align-center">
+              <img src="images/ignite-icon.png" alt="lecture icon" />
+              <h3>CC Ignite</h3>
+              <p>Connect globally, build your brand.</p>
+            </div>
+          </div>
+          <button type="button" class="btn program-btn">
+            Join CC Global Summit 2023
+          </button>
+
+          <a href="#" class="program-link">see the whole Program</a>
+        </div>
+      </section>
+      <!-- Features Section Start -->
+      <section class="feature flex-column align-center">
+        <div class="container flex-column align-center">
+          <h2>Featured Speakers</h2>
+          <span class="underline-sm"></span>
+          <div class="feature-container flex-column align-center">
+            <div class="feature-cards grid column"></div>
+          </div>
+          <button type="button" class="btn load-more-button">Load More</button>
+        </div>
+      </section>
+
+      <!-- Partner section start -->
+      <section class="partner flex-column justify-center align-center">
+        <div class="container flex-column justify-center align-center">
+          <h2>Partner</h2>
+          <span class="underline-sm"></span>
+          <div
+            class="partner-logo-wrapper flex-row justify-center align-center"
+          >
+            <img src="./images/mozilla.png" alt="Mozilla logo" />
+            <img src="./images/google.png" alt="Google logo" />
+            <img src="./images/naver.png" alt="Naver logo" />
+            <img src="./images/lumen.png" alt="lumen logo" />
+            <img src="./images/airbnbmain.png" alt="Airbnb logo" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer flex-row align-center">
+      <div class="left">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="right">
+        <p>2023 Converge and Create Summit | Pakistan</p>
+        <p>&copy; All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

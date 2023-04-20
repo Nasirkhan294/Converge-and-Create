@@ -1,8 +1,6 @@
+<a name="readme-top"></a>
 
-<div align="center">
-  <h3><b>Converge and Create</b></h3>
-
-</div>
+[![Watch the video](./images/logo.png)](https://www.loom.com/share/78a5326b8ed14153aae75ddd9aa57ea8)
 
 <!-- TABLE OF CONTENTS -->
 
@@ -44,6 +42,8 @@
 ### Key Features <a name="key-features"></a>
 
 - [X] **Mobile Responsive**
+- [X] **Tablet Responsive**
+- [X] **Desktop Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,6 +52,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Project Demo](https://nasirkhan294.github.io/converge-and-create/)
+- [Project Into Video](https://www.loom.com/share/78a5326b8ed14153aae75ddd9aa57ea8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +69,7 @@ In order to run this project you need:
 
 ```
    ssh code:
-   git@github.com:Nasirkhan294/my-personal-portfolio.git
+   git@github.com:Nasirkhan294/converge-and-create.git
 ```
 
 ### Setup
@@ -77,7 +78,7 @@ Clone this repository to your desired folder:
 
 ```
   cd desired-folder
-  git clone git@github.com:Nasirkhan294/my-personal-portfolio.git
+  git clone git@github.com:Nasirkhan294/converge-and-create.git
 ```
 
 ### Deployment
@@ -155,6 +156,8 @@ Please support this project and be a part of something meaningful and impactful.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success.
+
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
