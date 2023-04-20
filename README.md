@@ -28,7 +28,7 @@
 
 **Converge and Create:** Converge and Create embodies the concept of uniting diverse ideas, perspectives, and individuals to spark innovation and bring new creations to life. This project celebrates the power of collaboration and highlights the importance of inclusivity in the creative process. Through the convergence of varied viewpoints and talents, we aim to inspire groundbreaking ideas and foster a culture of creativity and teamwork.
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+[![Watch the video](./images/logo.png)](https://www.loom.com/share/78a5326b8ed14153aae75ddd9aa57ea8)
 
 ## 🛠 Built With <a name="built-with"></a>
 
