@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  ![Converge and Create](./images/logo.png)
+[![Watch the video](./images/logo.png)](https://www.loom.com/share/78a5326b8ed14153aae75ddd9aa57ea8)
 
 <!-- TABLE OF CONTENTS -->
 
