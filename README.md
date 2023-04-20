@@ -28,6 +28,8 @@
 
 **Converge and Create:** Converge and Create embodies the concept of uniting diverse ideas, perspectives, and individuals to spark innovation and bring new creations to life. This project celebrates the power of collaboration and highlights the importance of inclusivity in the creative process. Through the convergence of varied viewpoints and talents, we aim to inspire groundbreaking ideas and foster a culture of creativity and teamwork.
 
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
 ## 🛠 Built With <a name="built-with"></a>
 
   <ul>
@@ -68,7 +70,7 @@ In order to run this project you need:
 
 ```
    ssh code:
-   git@github.com:Nasirkhan294/my-personal-portfolio.git
+   git@github.com:Nasirkhan294/converge-and-create.git
 ```
 
 ### Setup
@@ -77,7 +79,7 @@ Clone this repository to your desired folder:
 
 ```
   cd desired-folder
-  git clone git@github.com:Nasirkhan294/my-personal-portfolio.git
+  git clone git@github.com:Nasirkhan294/converge-and-create.git
 ```
 
 ### Deployment
