@@ -75,7 +75,7 @@ a {
 
 .column {
   grid-template-columns: 100%;
-  grid-gap: 3em;
+  grid-gap: 5em;
 }
 
 /* -------------------- Mobile Header Styles -------------------- */
@@ -288,6 +288,7 @@ p {
 
 .feature-card {
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .feature-thumbnail {
@@ -475,12 +476,25 @@ p {
 /* -------------------- Footer Styles -------------------- */
 .footer {
   padding: 1em 0;
+  justify-content: space-evenly;
   text-align: center;
 }
 
-.footer p {
-  font-size: 1em;
-  margin: 0.5em 0;
+.footer .left {
+  width: 50%;
+}
+
+.footer .left img {
+  width: 100%;
+}
+
+.footer .right {
+  width: 40%;
+}
+
+.about {
+  background-color: #000 !important;
+  color: var(--base-color);
 }
 
 /* ====================== Tablet & Desktop Breakpoints  ========================== */
@@ -562,6 +576,7 @@ p {
   }
 
   .hero-highlight {
+    background-color: #f7f7f8;
     margin: 1em 0;
     font-size: 1.2em;
   }
@@ -613,6 +628,7 @@ p {
 
   .feature-cards {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
   }
 
   .feature-card {
@@ -673,6 +689,10 @@ p {
   .overlay p {
     font-size: 1.2em;
   }
+
+  .footer .left {
+    width: 40%;
+  }
 }
 
 /* =================== Desktop Styles ===================== */
@@ -703,14 +723,15 @@ p {
 
   .hero-content {
     position: absolute;
-    top: 48%;
-    left: 36%;
-    width: 38%;
+    top: 45%;
+    left: 40%;
+    width: 60%;
   }
 
   .hero-highlight {
     padding: 1em;
     font-size: 1em;
+    width: 75%;
   }
 
   .hero-top-desc {
@@ -718,7 +739,7 @@ p {
   }
 
   .hero-heading {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .hero-area h2 {
@@ -762,9 +783,18 @@ p {
     width: 8%;
   }
 
-  .footer {
-    padding-top: 3em;
+  .footer p {
+    font-size: 1em;
   }
+
+  .footer .left {
+    width: 25%;
+  }
+
+  .footer .right {
+    margin-top: 1em;
+  }
+
 
   .about-hero-area {
     background-image: url(../images/main_big.png);
