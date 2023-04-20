@@ -75,7 +75,7 @@ a {
 
 .column {
   grid-template-columns: 100%;
-  grid-gap: 1em;
+  grid-gap: 2em;
 }
 
 /* -------------------- Mobile Header Styles -------------------- */
@@ -130,13 +130,13 @@ header .container {
 }
 
 .nav-item {
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   position: absolute;
-  top: 16%;
+  top: 14%;
   left: 0;
   width: 100%;
-  height: 49%;
+  height: 55%;
   background-color: var(--base-color);
   text-align: center;
   text-transform: capitalize;
@@ -147,10 +147,6 @@ header .container {
 
 .nav-item.active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.nav-item li {
-  margin-bottom: 1em;
 }
 
 .nav-item li a {
@@ -169,20 +165,9 @@ header .container {
   background-image: url(../images/mobile_intro_bg.png);
   background-size: cover;
   background-position: center;
-  min-height: 70vh;
+  min-height: 64vh;
   position: relative;
   padding-bottom: 2em;
-}
-
-.hero-area::before {
-  content: '';
-  filter: blur(0.5em);
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .hero-content {
@@ -249,6 +234,7 @@ header .container {
 
 .program-cards {
   margin: 2em auto;
+  grid-gap: 1em;
 }
 
 .program-card {
@@ -350,17 +336,6 @@ p {
   background-repeat: no-repeat;
   min-height: 66vh;
   position: relative;
-}
-
-.about-hero-area::before {
-  content: '';
-  filter: blur(0.5em);
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .about-hero-content {
@@ -545,7 +520,6 @@ p {
   }
 
   .nav-item {
-    justify-content: space-evenly;
     flex-direction: row;
     clip-path: none;
     width: 50%;
@@ -564,9 +538,9 @@ p {
 
   .hero-area {
     background-size: cover;
-    background-position: left center;
+    background-position: left bottom;
     background-repeat: no-repeat;
-    min-height: 120vh;
+    min-height: 80vh;
   }
 
   .hero-content {
@@ -641,7 +615,7 @@ p {
   }
 
   .feature-card {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
   }
 
   .feature-thumbnail {
@@ -666,7 +640,7 @@ p {
   }
 
   .about-hero-area {
-    min-height: 120vh;
+    min-height: 80vh;
   }
 
   .about-hero-content {
