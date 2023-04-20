@@ -75,7 +75,7 @@ a {
 
 .column {
   grid-template-columns: 100%;
-  grid-gap: 2em;
+  grid-gap: 3em;
 }
 
 /* -------------------- Mobile Header Styles -------------------- */
@@ -133,7 +133,7 @@ header .container {
   justify-content: space-evenly;
   flex-direction: column;
   position: absolute;
-  top: 14%;
+  top: 13%;
   left: 0;
   width: 100%;
   height: 55%;
@@ -217,6 +217,7 @@ header .container {
 .program {
   background-image: url(../images/main-background-icon.PNG);
   padding: 2em 0;
+  min-height: 66vh;
 }
 
 .program h2 {
@@ -332,7 +333,7 @@ p {
 /* -------------------- Mobile About Page Hero Styles -------------------- */
 .about-hero-area {
   background-image: url(../images/about_bg_01.png);
-  background-position: left top;
+  background-position: right bottom;
   background-repeat: no-repeat;
   min-height: 66vh;
   position: relative;
@@ -345,7 +346,7 @@ p {
   transform: translate(-50%, -45%);
   text-align: center;
   z-index: 1;
-  width: 100%;
+  width: 94%;
   padding-bottom: 3em;
 }
 
@@ -586,7 +587,7 @@ p {
     text-align: center;
   }
 
-  .program-card:nth-child(4) {
+  .program-card:hover {
     border: 2px solid #fff;
   }
 
